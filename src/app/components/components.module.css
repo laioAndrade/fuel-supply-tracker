@@ -1,0 +1,56 @@
+.primaryButton {
+  color: #edf2f7;
+  background: #2a4365;
+  padding: 8px;
+  border-radius: 16px;
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.primaryButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cardBox {
+  background-color: #fff;
+  color: #2a4365;
+  border: 1px solid #cbd5e0;
+  border-radius: 16px;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input {
+  /* width: 200px; */
+  height: 32px;
+  border-radius: 4px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  width: 15vw;
+  min-height: 100vh;
+  color: #edf2f7;
+  background: #2a4365;
+  position: fixed;
+}
+
+.navBarTitle {
+  color: #ffa41b;
+}
