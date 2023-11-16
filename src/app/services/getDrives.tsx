@@ -4,7 +4,7 @@ type Driver = {
 };
 
 export async function getDrivers() {
-  const data = await fetch("http://127.0.0.1:3003/drivers");
+  const data = await fetch(`${process.env.API_URL}/drivers`);
   const drivers = await data.json();
   return drivers;
 }

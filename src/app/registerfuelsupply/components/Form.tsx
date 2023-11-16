@@ -36,7 +36,7 @@ export default function Form({ drivers, fuelTypes }: FormProps) {
       fuelTypeId: data["Tipo de combustivel"],
       fuelLevel: data["Quantidade de combustivel"],
     });
-    const res = await fetch("http://127.0.0.1:3003/fuel-supply", {
+    const res = await fetch(`${process.env.API_URL}/fuel-supply`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

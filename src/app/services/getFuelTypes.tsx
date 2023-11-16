@@ -1,5 +1,5 @@
 export async function getFuelTypes() {
-  const data = await fetch("http://127.0.0.1:3003/fuel-types");
+  const data = await fetch(`${process.env.API_URL}/fuel-types`);
   const fuelTypes = await data.json();
   return fuelTypes;
 }
